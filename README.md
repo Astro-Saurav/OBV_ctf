@@ -1,46 +1,63 @@
 # Operation Black Vault (OBV) CTF Suite
 
-Welcome to the **Operation Black Vault CTF Suite**. This repository contains a collection of highly creative, incredibly difficult, and technically unique CTF (Capture The Flag) challenges, designed for advanced players who are looking for a true test of their skills.
+Welcome to the **Operation Black Vault** Capture The Flag (CTF) challenge suite! This repository contains a complete, ready-to-deploy, military/tactical-themed CTF competition consisting of five distinct categories and 30 highly polished challenges. 
 
-## Categories
+This environment is designed with a dark, psychological horror and espionage narrative, intended to test players in real-world offensive and defensive cybersecurity disciplines.
 
-Currently, the repository features the **Miscellaneous** category.
+---
 
-### Miscellaneous
+## 📂 Repository Structure
 
-This category contains 6 challenges that blend forensic analysis, cryptography, steganography, polyglots, and esoteric programming into bizarre and complex problems.
+The CTF is split into five primary categories. Each category contains 6 challenges, scaling in difficulty from Easy to Hard.
 
-1. **[The Decoy](miscellaneous/challenge-01-the-decoy)** - *Easy*
-   - A forensic analysis challenge focusing on retrieving data from the hidden history and reflogs of a seemingly empty git repository.
-2. **[Polyglot Paradox](miscellaneous/challenge-02-polyglot-paradox)** - *Medium*
-   - A file format challenge featuring a triple-polyglot file that is simultaneously a valid PDF document, a ZIP archive, and an executable Python script.
-3. **[The Chronos Anomaly](miscellaneous/challenge-03-the-chronos-anomaly)** - *Medium*
-   - A network analysis challenge where the secret flag is not contained within the packets themselves, but encoded within the microsecond timing deltas between them.
-4. **[Terminal Echo](miscellaneous/challenge-04-terminal-echo)** - *Hard*
-   - An extreme Python PyJail challenge that implements a strict regex firewall completely banning all alphanumeric characters (no letters, no numbers), requiring Unicode normalization bypass techniques (PEP 3131).
-5. **[Schrödinger's Sandbox](miscellaneous/challenge-05-schrodingers-sandbox)** - *Hard*
-   - A C compiler sandbox challenge that bans all strings (no quotes) and standard I/O library calls. Exploitation requires injecting raw assembly shellcode using hex arrays and invoking `mprotect`.
-6. **[The Infinite Void](miscellaneous/challenge-06-the-infinite-void)** - *Medium*
-   - A steganography challenge that hides binary data entirely inside zero-width characters (invisible characters) embedded in an innocent-looking text file.
+### 1. [Binary Exploitation (Pwn)](./binary_exploitation/README.md)
+Focuses on memory corruption, bypassing modern mitigations (NX, PIE, ASLR), Return-Oriented Programming (ROP), and heap exploitation.
+* **Format:** ELF binaries (C/C++) running natively or in Dockerized `socat` wrappers.
 
-## Repository Structure
+### 2. [Web Exploitation](./web_exploitation/README.md)
+Focuses on modern web application vulnerabilities, including IDOR, SQL Injection, JWT Forgery (`alg:none`), Server-Side Template Injection (SSTI), SSRF, and Race Conditions.
+* **Format:** Containerized Go/HTML applications with built-in anti-AI/bot traps.
 
-Each challenge has its own directory containing:
-- `README.md` - Challenge description and setup instructions for organizers.
-- The challenge files to be provided to players (e.g. `capture.pcap`, `repo.zip`, `void.txt`).
-- `writeup.md` - The official solution writeup.
-- Source code, build scripts, or Dockerfiles used to generate or host the challenge.
+### 3. [Cryptography](./cryptography/README.md)
+Focuses on subverting encryption protocols and mathematics, including base encoding, Vigenère ciphers, XOR masking, Hybrid Crypto, RSA (small `e` and Wiener's Attack), LCG key streams, and Mersenne Twister PRNG cracking.
+* **Format:** Python scripts and encrypted ciphertext/public keys.
 
-## Setup Instructions
+### 4. [Digital Forensics](./digital_forensics/ORGANIZER_MANUAL.md)
+Focuses on uncovering hidden data, including DTMF audio decoding, PDF steganography, corrupted partition tables/disk images, PCAP network traffic analysis (USB/Network), and DNS Exfiltration malware.
+* **Format:** Standalone artifacts (PCAPs, PDFs, Disk Images, Audio files). Includes psychological horror/jump scares.
 
-Most challenges are static files that can simply be provided to the players. Challenges that require a server to run (such as `Terminal Echo` and `Schrödinger's Sandbox`) come with `Dockerfile`s. To deploy them:
+### 5. [Miscellaneous](./miscellaneous/README.md)
+Focuses on blending forensic analysis, cryptography, steganography, polyglots, and esoteric programming into bizarre and complex problems.
+* **Format:** A mix of Python PyJails, C compiler sandboxes, polyglot files, and esoteric steganography.
 
-```bash
-cd miscellaneous/challenge-04-terminal-echo
-docker build -t obv-ch04 .
-docker run -d -p 9004:9004 obv-ch04
-```
+---
 
-## Contributing
+## 🚩 Flag Format
+All flags across the entire CTF follow the standard format:
+`BVAULT{...}`
 
-The challenges in this repository are designed to be "10/10" in creativity and difficulty. If you have an idea for a challenge that pushes the boundaries of traditional CTF formats, feel free to submit a pull request!
+---
+
+## 🛠️ Deploying the Challenges
+
+### Web Exploitation & Networked Pwn
+Challenges that require live network interaction (like Web Exploitation) are completely Dockerized for instant, consistent deployment.
+
+1. Navigate to the specific challenge folder (e.g., `web_exploitation`).
+2. Run `docker-compose up -d --build` (or the respective deployment script) to spin up the isolated challenge instances.
+3. Challenges will be mapped to local host ports (e.g., `8001` through `8006`).
+
+### Static Challenges (Crypto, Forensics, Local Pwn, Misc)
+These challenges only require the players to be provided with the target files. Inside each challenge directory, you will find:
+* A `description.txt` meant for the players.
+* The challenge files (e.g., `.elf`, `.pcap`, `.py`, `.txt`).
+* A `writeup.md` file (FOR ORGANIZERS ONLY) detailing exactly how to solve the challenge.
+
+---
+
+## 📖 Organizer / Admin Manuals
+
+For detailed instructions on running each category, refer to the organizer readmes located inside the category folders:
+- **Forensics Organizer Manual:** `digital_forensics/ORGANIZER_MANUAL.md`
+- **Web Exploitation Manual:** `web_exploitation/README.md`
+- **Miscellaneous Manual:** `miscellaneous/README.md`
