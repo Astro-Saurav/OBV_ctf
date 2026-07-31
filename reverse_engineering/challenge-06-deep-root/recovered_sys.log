@@ -1,0 +1,6 @@
+Jul 31 10:14:02 vault-srv sshd[123]: Failed password for root from 192.168.1.55 port 54321
+Jul 31 11:22:10 vault-srv sshd[124]: Failed password for admin from 10.0.0.9 port 4444
+Jul 31 12:00:01 vault-srv sshd[125]: Accepted publickey for root from 172.16.5.10 port 2222
+Jul 31 14:33:42 vault-srv sshd[331]: Failed password for invalid user oracle from 10.10.10.1 port 52123
+Jul 31 16:12:00 vault-srv sshd[901]: Accepted password for root from 10.99.0.222 port 50123 ssh2
+Jul 31 18:45:11 vault-srv sshd[1022]: Failed password for root from 192.168.1.55 port 54322
