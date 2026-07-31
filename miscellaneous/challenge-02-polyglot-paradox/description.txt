@@ -1,9 +1,38 @@
-Operation Black Vault — Miscellaneous
-Challenge: Polyglot Paradox
-Difficulty: 🟡 Medium
+╔══════════════════════════════════════════════════════════════╗
+║          OPERATION BLACK VAULT — PHANTOM COMMAND            ║
+║                    MISSION BRIEFING                         ║
+╚══════════════════════════════════════════════════════════════╝
 
-We intercepted a weird file from a Black Vault operative. Our systems are confused. The forensics team says it's a PDF. The reverse engineering team says it's a Python script. The data team says it's a ZIP archive.
+CLASSIFICATION: CONFIDENTIAL
+OPERATION CODENAME: POLYGLOT PARADOX
+CATEGORY: Miscellaneous
+DIFFICULTY: 🟡 MEDIUM | POINTS: 450
 
-They are all right. And they are all wrong.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Find the true flag hidden within the layers.
+INTELLIGENCE REPORT:
+
+  We recovered a classified document from a breached Black
+  Vault server. The file command says it's a PDF.
+  Our forensics team says it's a ZIP archive.
+  Running it executes a Python script.
+
+  All three of them are correct.
+
+  This file exists in three states simultaneously. Each
+  format hides a different truth. Only one of them holds
+  the real flag — the others are decoys designed to
+  waste your time.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MISSION OBJECTIVE:
+
+  Analyze the triple-polyglot file as all three formats.
+  Determine which interpretation conceals the true flag
+  and extract it.
+
+FILES PROVIDED:
+  → classified_document.pdf    (The polyglot artifact)
+
+PHANTOM COMMAND ACTUAL — OUT.

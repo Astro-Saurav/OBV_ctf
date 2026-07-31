@@ -1,9 +1,39 @@
-Operation Black Vault — Miscellaneous
-Challenge: The Chronos Anomaly
-Difficulty: 🟠 Medium/Hard
+╔══════════════════════════════════════════════════════════════╗
+║          OPERATION BLACK VAULT — PHANTOM COMMAND            ║
+║                    MISSION BRIEFING                         ║
+╚══════════════════════════════════════════════════════════════╝
 
-We captured this brief network interaction between a known Black Vault sleeper agent and their command server. It's just a sequence of ICMP Ping requests. 
+CLASSIFICATION: SECRET
+OPERATION CODENAME: THE CHRONOS ANOMALY
+CATEGORY: Miscellaneous
+DIFFICULTY: 🟡 MEDIUM | POINTS: 450
 
-The packets are empty. The source IP is normal. The destination IP is normal. We ran strings on it, we looked at packet lengths... nothing.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-But the agent received a message. How?
+INTELLIGENCE REPORT:
+
+  A Black Vault cell developed a steganographic covert
+  channel so subtle it defeated every content-based
+  detection system we have.
+
+  The data isn't in the packets. It was never in the packets.
+
+  It's in the time between them.
+
+  The microsecond gaps between packet arrivals encode
+  binary data using a timing oracle. To the naked eye,
+  it's normal network traffic. To a careful analyst
+  with a timestamp parser — it's a message.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MISSION OBJECTIVE:
+
+  Analyze the inter-packet timing deltas in the PCAP
+  capture and decode the hidden binary signal to
+  reconstruct the flag.
+
+FILES PROVIDED:
+  → capture.pcap    (Network capture with timing covert channel)
+
+PHANTOM COMMAND ACTUAL — OUT.

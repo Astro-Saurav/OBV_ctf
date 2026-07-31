@@ -1,8 +1,43 @@
-Operation Black Vault — Miscellaneous
-Challenge: Schrödinger's Sandbox
-Difficulty: 🔴 Hard
+╔══════════════════════════════════════════════════════════════╗
+║          OPERATION BLACK VAULT — PHANTOM COMMAND            ║
+║                    MISSION BRIEFING                         ║
+╚══════════════════════════════════════════════════════════════╝
 
-We discovered a C compiler sandbox inside the Black Vault. It takes your C code, compiles it, and runs it on their server.
-However, they've completely restricted any string usage. You cannot use double quotes (`"`), single quotes (`'`), or include any header files (`#include`). They also specifically banned keywords like `system`, `exec`, `open`, `read`, `write`, `flag`, and `syscall`.
+CLASSIFICATION: TOP SECRET // EYES ONLY
+OPERATION CODENAME: SCHRÖDINGER'S SANDBOX
+CATEGORY: Miscellaneous
+DIFFICULTY: 🔴 HARD | POINTS: 700
 
-Can you read `/home/ctf/flag` when you can't even type the word "flag" or use strings?
+LIVE SERVER: nc -4 schrodinger.theobv.xyz 9005
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+INTELLIGENCE REPORT:
+
+  Deep inside the Black Vault we found a C compiler sandbox.
+  Submit C code — it compiles and runs it on their servers.
+
+  But they stripped it down to almost nothing.
+
+  No strings. No quotes of any kind. No #include.
+  No open, read, write, system, exec, syscall, or flag.
+  You cannot even spell the name of the file you need to read.
+
+  The flag exists on this server. You just cannot ask
+  for it in any language they recognise.
+
+  So don't speak their language. Speak in raw bytes.
+  Let the CPU decode what words cannot say.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MISSION OBJECTIVE:
+
+  Submit C code that bypasses every filter and executes
+  raw shellcode to read /home/ctf/flag without using
+  any banned keyword or character.
+
+Connect:
+  nc -4 schrodinger.theobv.xyz 9005
+
+PHANTOM COMMAND ACTUAL — OUT.

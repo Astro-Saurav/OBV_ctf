@@ -1,7 +1,36 @@
-Operation Black Vault — Miscellaneous
-Challenge: The Decoy
-Difficulty: 🟢 Easy
+╔══════════════════════════════════════════════════════════════╗
+║          OPERATION BLACK VAULT — PHANTOM COMMAND            ║
+║                    MISSION BRIEFING                         ║
+╚══════════════════════════════════════════════════════════════╝
 
-We intercepted this encrypted payload drop. The contents seem straightforward, but Black Vault operatives are known for their deception and tracking of autonomous agents. 
+CLASSIFICATION: UNCLASSIFIED
+OPERATION CODENAME: THE DECOY
+CATEGORY: Miscellaneous
+DIFFICULTY: 🟢 EASY | POINTS: 200
 
-Retrieve the actual flag from the archive.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+INTELLIGENCE REPORT:
+
+  A Black Vault operative stored classified data inside a
+  git repository — then tried to erase it by deleting the
+  files and force-pushing a clean branch.
+
+  They don't understand how git works.
+
+  Git never truly forgets. Every commit, every blob, every
+  deleted branch leaves a shadow in the reflog. The data
+  is still there — you just have to know where to look.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MISSION OBJECTIVE:
+
+  Dig through the git history and reflogs of the provided
+  repository to recover the deleted classified data
+  and capture the flag.
+
+FILES PROVIDED:
+  → repo.zip    (Suspicious git repository)
+
+PHANTOM COMMAND ACTUAL — OUT.

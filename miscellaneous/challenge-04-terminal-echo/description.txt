@@ -1,10 +1,45 @@
-Operation Black Vault — Miscellaneous
-Challenge: Terminal Echo
-Difficulty: 🔴 Hard
+╔══════════════════════════════════════════════════════════════╗
+║          OPERATION BLACK VAULT — PHANTOM COMMAND            ║
+║                    MISSION BRIEFING                         ║
+╚══════════════════════════════════════════════════════════════╝
 
-We've breached one of the Black Vault's isolated terminals. It evaluates whatever Python code we send it. 
+CLASSIFICATION: TOP SECRET
+OPERATION CODENAME: TERMINAL ECHO
+CATEGORY: Miscellaneous
+DIFFICULTY: 🔴 HARD | POINTS: 700
 
-However, they deployed an aggressive strict-regex firewall. It absolutely bans every single letter (a-z, A-Z) and every single number (0-9). 
+LIVE SERVER: nc -4 terminal.theobv.xyz 9004
 
-Can you bypass the firewall and read the flag? 
-*Note: The flag is located at /home/ctf/flag.txt*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+INTELLIGENCE REPORT:
+
+  The Black Vault runs an internal Python terminal that
+  executes operator commands in real-time. Thinking they
+  were clever, they deployed a firewall with a strict
+  regex filter.
+
+  It blocks every letter. Every number. a-z. A-Z. 0-9.
+  All of it. Completely banned.
+
+  What they don't know is that Python speaks languages
+  older than ASCII. Unicode mathematical symbols — when
+  fed through Python's NFKC normalizer — collapse back
+  into standard ASCII at the interpreter level.
+
+  They built a wall of letters. You have a library of
+  ten thousand glyphs that look like nothing — and
+  execute as everything.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MISSION OBJECTIVE:
+
+  Bypass the alphanumeric Python jail using Unicode
+  normalization (PEP 3131) to execute arbitrary code
+  and read the flag from /home/ctf/flag.txt
+
+Connect:
+  nc -4 terminal.theobv.xyz 9004
+
+PHANTOM COMMAND ACTUAL — OUT.

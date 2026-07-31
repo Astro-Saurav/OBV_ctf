@@ -1,9 +1,42 @@
-Operation Black Vault — Miscellaneous
-Challenge: The Infinite Void
-Difficulty: 🟠 Medium
+╔══════════════════════════════════════════════════════════════╗
+║          OPERATION BLACK VAULT — PHANTOM COMMAND            ║
+║                    MISSION BRIEFING                         ║
+╚══════════════════════════════════════════════════════════════╝
 
-"The void contains nothing. Do not stare too long."
+CLASSIFICATION: CONFIDENTIAL
+OPERATION CODENAME: THE INFINITE VOID
+CATEGORY: Miscellaneous
+DIFFICULTY: 🟡 MEDIUM | POINTS: 450
 
-We found this strange text file floating around the vault servers. Our analysts claim there is a hidden message inside, but we can't see anything with our bare eyes. Can you look closer?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-File attached: `void.txt`
+INTELLIGENCE REPORT:
+
+  "The void contains nothing. Do not stare too long."
+
+  We intercepted this text file from a Black Vault covert
+  communication channel. To every analyst on our team
+  it looks like an ordinary paragraph. Plain text.
+  Nothing unusual.
+
+  But the file size doesn't add up.
+
+  There are characters in this file that have no width.
+  Characters that render as nothing. Characters that
+  exist between the letters you can see, in the space
+  between spaces — and they are not random.
+
+  They are a message. Find it.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MISSION OBJECTIVE:
+
+  Analyze the text file to detect and extract the hidden
+  binary data encoded within zero-width Unicode characters
+  (U+200B / U+200C) and decode the flag.
+
+FILES PROVIDED:
+  → void.txt    (Intercepted text communication)
+
+PHANTOM COMMAND ACTUAL — OUT.
