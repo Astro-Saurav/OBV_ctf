@@ -35,7 +35,7 @@ All challenges run under the theme of a covert intelligence operation — "the B
 ```
 miscellaneous/
 ├── challenge-01-the-decoy/
-│   ├── secret.zip                  # The challenge file
+│   ├── repo.zip                  # The challenge file
 │   ├── description.txt
 │   ├── README.md
 │   ├── test_exploit.sh
