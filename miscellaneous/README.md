@@ -42,13 +42,13 @@ miscellaneous/
 │   └── writeup.md
 │
 ├── challenge-02-polyglot-paradox/
-│   ├── anomaly                     # The challenge file
+│   ├── classified_document.pdf                     # The challenge file
 │   ├── description.txt
 │   ├── README.md
 │   ├── test_exploit.py
 │   └── writeup.md
 │
-├── challenge-03-the-chronos-anomaly/
+├── challenge-03-the-chronos-classified_document.pdf/
 │   ├── capture.pcap                # The challenge file
 │   ├── description.txt
 │   ├── README.md
