@@ -12,6 +12,9 @@ The vault engineers tried to hide their credentials using a custom obfuscation r
 
 Find the access code to unlock the vault door.
 
+## Files to Provide to Players
+- `vault_door.elf`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{x0r_0bfu5c4710n_15_n07_3n"...) = 50

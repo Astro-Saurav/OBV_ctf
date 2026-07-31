@@ -14,6 +14,10 @@ Reverse the VM engine to understand the custom Instruction Set Architecture, the
 
 Usage: ./ghost_vm.elf <access_code>
 
+## Files to Provide to Players
+- `vault_logic.bin`
+- `ghost_vm.elf`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{gh057_vm_r3v3r53d_5ucc355fully}`

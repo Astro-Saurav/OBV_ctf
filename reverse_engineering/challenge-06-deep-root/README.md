@@ -14,6 +14,10 @@ We managed to pull the binary and a memory dump of the log file it was looking a
 
 Recover the flag.
 
+## Files to Provide to Players
+- `recovered_sys.log`
+- `backdoor_daemon.elf`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{3nv1r0nm3n74l_k3y1ng_15_5734l7hy}`

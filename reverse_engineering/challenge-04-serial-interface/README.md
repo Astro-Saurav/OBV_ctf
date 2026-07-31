@@ -14,6 +14,9 @@ Reverse engineer the firmware's verification algorithm to craft a valid serial k
 
 Format: XXXX-XXXX-XXXX-XXXX
 
+## Files to Provide to Players
+- `comms_radio.elf`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{k3yg3n_m4573r_8291}`

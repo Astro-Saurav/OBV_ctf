@@ -10,6 +10,9 @@ Difficulty: 🟢 Easy
 
 We seized a PDF from the target's machine. It looks completely blank, but our sensors detect an overwhelming amount of data inside it. What are they hiding?
 
+## Files to Provide to Players
+- `briefing.pdf`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{ph4n70m_m374d474_r3v34l3d}`

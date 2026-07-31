@@ -10,6 +10,9 @@ Difficulty: 🟡 Medium
 
 The vault transmits system status reports encrypted with a custom, high-speed Repeating-Key XOR cipher. The key is exactly 6 bytes long. The plaintext always begins with the standard header 'SYSTEM STATUS REPORT:'. Recover the flag.
 
+## Files to Provide to Players
+- `encrypted.bin`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{r3p3471ng_x0r_k3y_br0k3n}`

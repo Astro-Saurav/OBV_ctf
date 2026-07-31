@@ -12,6 +12,9 @@ The enemy learned we were analyzing their tools. They added anti-tamper mechanis
 
 Find the correct activation code. Note: if you try to use a debugger to step through this, it might lie to you.
 
+## Files to Provide to Players
+- `drone_uplink.elf`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{f4k3_fl4g_y0u_4r3_b31ng_w47ch3d}`

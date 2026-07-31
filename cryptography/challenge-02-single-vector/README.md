@@ -14,6 +14,10 @@ We recovered the `encrypt.py` script from their system along with the `encrypted
 
 Reverse the process and recover the flag.
 
+## Files to Provide to Players
+- `encrypt.py`
+- `encrypted_doc.bin`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{...}`

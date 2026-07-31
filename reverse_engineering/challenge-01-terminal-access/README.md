@@ -12,6 +12,9 @@ We recovered a basic authentication module from a low-level guard's terminal. It
 
 Find the access code to get the flag.
 
+## Files to Provide to Players
+- `auth_module.elf`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{h4rdc0d3d_57r1ng5_4r3_b4d}`

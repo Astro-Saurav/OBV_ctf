@@ -14,6 +14,10 @@ The operative's callsign is "PHANTOM". That might be important.
 
 Decrypt the `intercept.txt` file to find the flag.
 
+## Files to Provide to Players
+- `encrypt.py`
+- `intercept.txt`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{l4y3r5_0f_0b5cur17y_f41l}`

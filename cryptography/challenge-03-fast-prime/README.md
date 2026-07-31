@@ -13,6 +13,10 @@ The enemy engineer tried to securely send an AES key to a field agent using RSA.
 We recovered the `ciphertext.json` and the `encrypt.py` script.
 Break the RSA encryption to recover the AES key, then decrypt the flag.
 
+## Files to Provide to Players
+- `encrypt.py`
+- `ciphertext.json`
+
 ---
 *Note for Platform Upload:*
 **Flag:** `BVAULT{hybr1d_crypt0_w17h0ut_p4dd1ng_15_b4d}`
