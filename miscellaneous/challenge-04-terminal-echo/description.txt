@@ -1,0 +1,10 @@
+Operation Black Vault — Miscellaneous
+Challenge: Terminal Echo
+Difficulty: 🔴 Hard
+
+We've breached one of the Black Vault's isolated terminals. It evaluates whatever Python code we send it. 
+
+However, they deployed an aggressive strict-regex firewall. It absolutely bans every single letter (a-z, A-Z) and every single number (0-9). 
+
+Can you bypass the firewall and read the flag? 
+*Note: The flag is located at /home/ctf/flag.txt*

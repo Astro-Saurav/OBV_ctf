@@ -1,0 +1,9 @@
+Operation Black Vault — Miscellaneous
+Challenge: The Chronos Anomaly
+Difficulty: 🟠 Medium/Hard
+
+We captured this brief network interaction between a known Black Vault sleeper agent and their command server. It's just a sequence of ICMP Ping requests. 
+
+The packets are empty. The source IP is normal. The destination IP is normal. We ran strings on it, we looked at packet lengths... nothing.
+
+But the agent received a message. How?

@@ -1,0 +1,9 @@
+Operation Black Vault — Miscellaneous
+Challenge: Polyglot Paradox
+Difficulty: 🟡 Medium
+
+We intercepted a weird file from a Black Vault operative. Our systems are confused. The forensics team says it's a PDF. The reverse engineering team says it's a Python script. The data team says it's a ZIP archive.
+
+They are all right. And they are all wrong.
+
+Find the true flag hidden within the layers.

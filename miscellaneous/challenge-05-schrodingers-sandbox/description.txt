@@ -1,0 +1,8 @@
+Operation Black Vault — Miscellaneous
+Challenge: Schrödinger's Sandbox
+Difficulty: 🔴 Hard
+
+We discovered a C compiler sandbox inside the Black Vault. It takes your C code, compiles it, and runs it on their server.
+However, they've completely restricted any string usage. You cannot use double quotes (`"`), single quotes (`'`), or include any header files (`#include`). They also specifically banned keywords like `system`, `exec`, `open`, `read`, `write`, `flag`, and `syscall`.
+
+Can you read `/home/ctf/flag` when you can't even type the word "flag" or use strings?
