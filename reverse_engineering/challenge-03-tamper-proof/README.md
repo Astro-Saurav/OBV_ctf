@@ -17,4 +17,4 @@ Find the correct activation code. Note: if you try to use a debugger to step thr
 
 ---
 *Note for Platform Upload:*
-**Flag:** `BVAULT{f4k3_fl4g_y0u_4r3_b31ng_w47ch3d}`
+**Flag:** `BVAULT{4n71_d3bugg1ng_w17h_p7r4c3}`

@@ -19,9 +19,18 @@ def clean_description(desc_text):
     return desc_text
 
 def extract_flag(writeup_text):
-    match = re.search(r'(BVAULT\{[^\}]+\})', writeup_text)
-    if match:
-        return match.group(1)
+    # Search specifically after "## Flag" or get the last occurrence
+    parts = writeup_text.split("## Flag")
+    if len(parts) > 1:
+        match = re.search(r'(BVAULT\{[^\}]+\})', parts[-1])
+        if match:
+            return match.group(1)
+    
+    # Fallback to last occurrence in the entire file if "## Flag" is missing
+    matches = re.findall(r'(BVAULT\{[^\}]+\})', writeup_text)
+    if matches:
+        return matches[-1]
+        
     return "UNKNOWN_FLAG"
 
 def extract_difficulty(writeup_text):
@@ -32,8 +41,6 @@ def extract_difficulty(writeup_text):
 
 def get_player_files(chall_dir, category):
     all_files = [f for f in os.listdir(chall_dir) if os.path.isfile(os.path.join(chall_dir, f))]
-    
-    # Exclude internal / organizer files
     exclude = ["description.txt", "writeup.md", "README.md", "test_exploit.py", "test_exploit.sh", "generate_readmes.py"]
     
     if category == "web_exploitation":
@@ -42,8 +49,6 @@ def get_player_files(chall_dir, category):
     player_files = []
     for f in all_files:
         if f not in exclude:
-            # We don't want to give away C source code for pwn/rev unless it's standard, but here it's blackbox mostly.
-            # We skip .c files just in case we left them in pwn/rev, unless we explicitly want them.
             if category in ["binary_exploitation", "reverse_engineering"] and f.endswith(".c"):
                 continue
             player_files.append(f"`{f}`")

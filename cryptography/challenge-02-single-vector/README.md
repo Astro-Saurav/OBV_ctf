@@ -20,4 +20,4 @@ Reverse the process and recover the flag.
 
 ---
 *Note for Platform Upload:*
-**Flag:** `BVAULT{...}`
+**Flag:** `BVAULT{x0r_m45k_4nd_5ub5717u710n_br0k3n}`
