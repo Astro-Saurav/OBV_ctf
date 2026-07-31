@@ -13,12 +13,12 @@ These challenges require players to identify and break classical ciphers, encodi
 
 | # | Codename | Concept | Difficulty | Points | Flag |
 |---|----------|---------|------------|--------|------|
-| 01 | 📡 Transmission Intercept | Multiple Encodings (B64/B32/Hex) | 🟢 Easy | 100 | `BVAULT{b453_3nc0d1ng_15_n07_3ncryp710n}` |
-| 02 | 🔑 Shifted Orders | Vigenere Cipher | 🟢 Easy | 150 | `BVAULT{v1g3n3r3_c1ph3r_ccl4551c}` |
-| 03 | 📉 Weak RSA | RSA Small Exponent (Cube Root) | 🟡 Medium | 300 | `BVAULT{r54_5m4ll_3_c0mm0n_m1574k3}` |
-| 04 | 🔁 Repeating XOR | Repeating-Key XOR (Known Plaintext) | 🟡 Medium | 400 | `BVAULT{r3p3471ng_x0r_k3y_br0k3n}` |
-| 05 | 🧠 Wiener's Attack | RSA Weak Private Key | 🔴 Hard | 600 | `BVAULT{w13n3r5_4774ck_r54_br0k3n}` |
-| 06 | 🎲 Mersenne Twister | PRNG State Prediction (MT19937) | 🔴 Hard | 800 | `BVAULT{m3r53nn3_7w1573r_prng_c0mpr0m153d}` |
+| 01 | 📡 Transmission Intercept | Multiple Encodings (B64/B32/Hex) | 🟢 Easy | 200 | `BVAULT{b453_3nc0d1ng_15_n07_3ncryp710n}` |
+| 02 | 🔑 Shifted Orders | Vigenere Cipher | 🟢 Easy | 200 | `BVAULT{v1g3n3r3_c1ph3r_ccl4551c}` |
+| 03 | 📉 Weak RSA | RSA Small Exponent (Cube Root) | 🟡 Medium | 450 | `BVAULT{r54_5m4ll_3_c0mm0n_m1574k3}` |
+| 04 | 🔁 Repeating XOR | Repeating-Key XOR (Known Plaintext) | 🟡 Medium | 450 | `BVAULT{r3p3471ng_x0r_k3y_br0k3n}` |
+| 05 | 🧠 Wiener's Attack | RSA Weak Private Key | 🔴 Hard | 700 | `BVAULT{w13n3r5_4774ck_r54_br0k3n}` |
+| 06 | 🎲 Mersenne Twister | PRNG State Prediction (MT19937) | 🔴 Hard | 700 | `BVAULT{m3r53nn3_7w1573r_prng_c0mpr0m153d}` |
 
 ---
 

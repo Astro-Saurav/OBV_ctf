@@ -19,14 +19,14 @@ All challenges run under the theme of a covert intelligence operation — "the B
 
 ## Challenge Map
 
-| # | Codename | Category/Concept | Difficulty | Port | Flag |
-|---|----------|------------------|------------|------|------|
-| 01 | 🕵️ The Decoy | Git Forensics & History | 🟢 Easy | N/A | `BVAULT{g1t_r3fl0g_n3v3r_f0rg3t5}` |
-| 02 | 🧩 Polyglot Paradox | Triple Polyglot (PDF/ZIP/PY) | 🟡 Medium | N/A | `BVAULT{p0lygl0t_m4d3_34sy_w1th_3x1f}` |
-| 03 | ⏱️ The Chronos Anomaly | Network Timing Steganography | 🟡 Medium | N/A | `BVAULT{t1m1ng_15_3v3ryth1ng_1n_th3_v01d}` |
-| 04 | 💻 Terminal Echo | Extreme Python PyJail (PEP 3131) | 🔴 Hard | 9004 | `BVAULT{n0_l3tt3r5_n0_pr0bl3m_un1c0d3_m4g1c}` |
-| 05 | 📦 Schrödinger's Sandbox | C Compiler Sandbox / Shellcode | 🔴 Hard | 9005 | `BVAULT{1nl1n3_4553mbly_5y5c4ll_m4573r}` |
-| 06 | 🕳️ The Infinite Void | Zero-Width Character Stego | 🟡 Medium | N/A | `BVAULT{z3r0_w1dth_ch4r4ct3r5_4r3_1nv151bl3}` |
+| # | Codename | Category/Concept | Difficulty | Port | Points | Flag |
+|---|----------|------------------|------------|------|--------|------|
+| 01 | 🕵️ The Decoy | Git Forensics & History | 🟢 Easy | N/A | 200 | `BVAULT{g1t_r3fl0g_n3v3r_f0rg3t5}` |
+| 02 | 🧩 Polyglot Paradox | Triple Polyglot (PDF/ZIP/PY) | 🟡 Medium | N/A | 450 | `BVAULT{p0lygl0t_m4d3_34sy_w1th_3x1f}` |
+| 03 | ⏱️ The Chronos Anomaly | Network Timing Steganography | 🟡 Medium | N/A | 450 | `BVAULT{t1m1ng_15_3v3ryth1ng_1n_th3_v01d}` |
+| 04 | 💻 Terminal Echo | Extreme Python PyJail (PEP 3131) | 🔴 Hard | 9004 | 700 | `BVAULT{n0_l3tt3r5_n0_pr0bl3m_un1c0d3_m4g1c}` |
+| 05 | 📦 Schrödinger's Sandbox | C Compiler Sandbox / Shellcode | 🔴 Hard | 9005 | 700 | `BVAULT{1nl1n3_4553mbly_5y5c4ll_m4573r}` |
+| 06 | 🕳️ The Infinite Void | Zero-Width Character Stego | 🟡 Medium | N/A | 450 | `BVAULT{z3r0_w1dth_ch4r4ct3r5_4r3_1nv151bl3}` |
 
 ---
 

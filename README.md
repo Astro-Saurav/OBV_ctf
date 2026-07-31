@@ -1,6 +1,6 @@
 # Operation Black Vault (OBV) CTF Suite
 
-Welcome to the **Operation Black Vault** Capture The Flag (CTF) challenge suite! This repository contains a complete, ready-to-deploy, military/tactical-themed CTF competition consisting of five distinct categories and 30 highly polished challenges. 
+Welcome to the **Operation Black Vault** Capture The Flag (CTF) challenge suite! This repository contains a complete, ready-to-deploy, military/tactical-themed CTF competition consisting of six distinct categories and 36 highly polished challenges. 
 
 This environment is designed with a dark, psychological horror and espionage narrative, intended to test players in real-world offensive and defensive cybersecurity disciplines.
 
@@ -8,7 +8,7 @@ This environment is designed with a dark, psychological horror and espionage nar
 
 ## 📂 Repository Structure
 
-The CTF is split into five primary categories. Each category contains 6 challenges, scaling in difficulty from Easy to Hard.
+The CTF is split into six primary categories. Each category contains 6 challenges, scaling in difficulty from Easy to Hard.
 
 ### 1. [Binary Exploitation (Pwn)](./binary_exploitation/README.md)
 Focuses on memory corruption, bypassing modern mitigations (NX, PIE, ASLR), Return-Oriented Programming (ROP), and heap exploitation.
@@ -26,7 +26,11 @@ Focuses on subverting encryption protocols and mathematics, including base encod
 Focuses on uncovering hidden data, including DTMF audio decoding, PDF steganography, corrupted partition tables/disk images, PCAP network traffic analysis (USB/Network), and DNS Exfiltration malware.
 * **Format:** Standalone artifacts (PCAPs, PDFs, Disk Images, Audio files). Includes psychological horror/jump scares.
 
-### 5. [Miscellaneous](./miscellaneous/README.md)
+### 5. [Reverse Engineering](./reverse_engineering/README.md)
+Focuses on disassembling and decompiling stripped binaries, understanding custom VM architectures, bypassing anti-debugging techniques, and reversing malware algorithms.
+* **Format:** ELF binaries (C/C++) requiring static and dynamic analysis.
+
+### 6. [Miscellaneous](./miscellaneous/README.md)
 Focuses on blending forensic analysis, cryptography, steganography, polyglots, and esoteric programming into bizarre and complex problems.
 * **Format:** A mix of Python PyJails, C compiler sandboxes, polyglot files, and esoteric steganography.
 
