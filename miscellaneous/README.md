@@ -19,14 +19,14 @@ All challenges run under the theme of a covert intelligence operation — "the B
 
 ## Challenge Map
 
-| # | Codename | Category/Concept | Difficulty | Port | Points | Flag |
-|---|----------|------------------|------------|------|--------|------|
-| 01 | 🕵️ The Decoy | Git Forensics & History | 🟢 Easy | N/A | 200 | `BVAULT{g1t_r3fl0g_n3v3r_f0rg3t5}` |
-| 02 | 🧩 Polyglot Paradox | Triple Polyglot (PDF/ZIP/PY) | 🟡 Medium | N/A | 450 | `BVAULT{p0lygl0t_m4d3_34sy_w1th_3x1f}` |
-| 03 | ⏱️ The Chronos Anomaly | Network Timing Steganography | 🟡 Medium | N/A | 450 | `BVAULT{t1m1ng_15_3v3ryth1ng_1n_th3_v01d}` |
-| 04 | 💻 Terminal Echo | Extreme Python PyJail (PEP 3131) | 🔴 Hard | 9004 | 700 | `BVAULT{n0_l3tt3r5_n0_pr0bl3m_un1c0d3_m4g1c}` |
-| 05 | 📦 Schrödinger's Sandbox | C Compiler Sandbox / Shellcode | 🔴 Hard | 9005 | 700 | `BVAULT{1nl1n3_4553mbly_5y5c4ll_m4573r}` |
-| 06 | 🕳️ The Infinite Void | Zero-Width Character Stego | 🟡 Medium | N/A | 450 | `BVAULT{z3r0_w1dth_ch4r4ct3r5_4r3_1nv151bl3}` |
+| # | Codename | Category/Concept | Difficulty | Points | Live URL | Flag |
+|---|----------|------------------|------------|--------|----------|------|
+| 01 | 🕵️ The Decoy | Git Forensics & History | 🟢 Easy | 200 | Static File | `BVAULT{g1t_r3fl0g_n3v3r_f0rg3t5}` |
+| 02 | 🧩 Polyglot Paradox | Triple Polyglot (PDF/ZIP/PY) | 🟡 Medium | 450 | Static File | `BVAULT{p0lygl0t_m4d3_34sy_w1th_3x1f}` |
+| 03 | ⏱️ The Chronos Anomaly | Network Timing Steganography | 🟡 Medium | 450 | Static File | `BVAULT{t1m1ng_15_3v3ryth1ng_1n_th3_v01d}` |
+| 04 | 💻 Terminal Echo | Extreme Python PyJail (PEP 3131) | 🔴 Hard | 700 | `nc -4 terminal.theobv.xyz 9004` | `BVAULT{n0_l3tt3r5_n0_pr0bl3m_un1c0d3_m4g1c}` |
+| 05 | 📦 Schrödinger's Sandbox | C Compiler Sandbox / Shellcode | 🔴 Hard | 700 | `nc -4 schrodinger.theobv.xyz 9005` | `BVAULT{1nl1n3_4553mbly_5y5c4ll_m4573r}` |
+| 06 | 🕳️ The Infinite Void | Zero-Width Character Stego | 🟡 Medium | 450 | Static File | `BVAULT{z3r0_w1dth_ch4r4ct3r5_4r3_1nv151bl3}` |
 
 ---
 
@@ -86,10 +86,21 @@ miscellaneous/
 
 ## Quick Start
 
+### Live Servers (Azure)
+
+Challenges 04 and 05 are live and accessible via netcat:
+
+```bash
+# Challenge 04 — Terminal Echo
+nc -4 terminal.theobv.xyz 9004
+
+# Challenge 05 — Schrödinger's Sandbox
+nc -4 schrodinger.theobv.xyz 9005
+```
+
 ### Local Testing (Docker)
 
-Challenges 04 and 05 require Docker.
-
+To run locally for testing:
 ```bash
 # Challenge 04
 cd challenge-04-terminal-echo
