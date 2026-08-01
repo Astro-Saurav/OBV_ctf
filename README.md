@@ -109,8 +109,8 @@ BVAULT{...}
 | 🏅 Place | Team | Score |
 |----------|------|-------|
 | 🥇 1st | **Binary Sharks** | **35,400 pts** |
-| 🥈 2nd | *(see scoreboard)* | — |
-| 🥉 3rd | *(see scoreboard)* | — |
+| 🥈 2nd | **DOSA** | **34,300 pts** |
+| 🥉 3rd | **Cyberguys** | **34,300 pts** |
 
 > 📊 Full scoreboard: [OBV/Operation Black Vault-scoreboard.csv](OBV/Operation%20Black%20Vault-scoreboard.csv)
 > 📦 Full CTFd backup: [OBV/](OBV/)

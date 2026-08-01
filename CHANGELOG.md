@@ -26,8 +26,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 | Place | Team | Score |
 |-------|------|-------|
 | 🥇 1st | Binary Sharks | 35,400 pts |
-| 🥈 2nd | *(see scoreboard.csv)* | — |
-| 🥉 3rd | *(see scoreboard.csv)* | — |
+| 🥈 2nd | DOSA | 34,300 pts |
+| 🥉 3rd | Cyberguys | 34,300 pts |
 
 > Full scoreboard: [`OBV/Operation Black Vault-scoreboard.csv`](OBV/Operation%20Black%20Vault-scoreboard.csv)
 
