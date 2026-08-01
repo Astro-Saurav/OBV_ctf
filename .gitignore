@@ -63,3 +63,6 @@ htmlcov/
 
 # pwntools tubes log
 /tubes/
+
+# Private competition data — moved to separate private repo
+OBV/
