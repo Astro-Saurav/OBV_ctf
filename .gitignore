@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Secrets & keys
+*.pem
+*.key
+.env.local
+.env.*.local
+secrets.txt
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# Docker
+.docker/
+
+# Python test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Challenge build artifacts
+*.o
+*.so
+*.out
+
+# CTFd exports (large zips tracked explicitly)
+# Unzip artifacts — don't commit extracted temp dirs
+/tmp_extract/
+
+# pwntools tubes log
+/tubes/

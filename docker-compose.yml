@@ -1,0 +1,106 @@
+# Root Docker Compose — Operation Black Vault CTF
+# Orchestrates ALL web exploitation challenge containers from the repo root.
+#
+# Usage:
+#   docker compose up -d --build      # Launch all challenges
+#   docker compose down               # Stop all challenges
+#   docker compose logs -f            # Tail all logs
+#   docker compose ps                 # Check container status
+
+version: '3.8'
+
+services:
+
+  # ── Challenge 01: Ghost Signal (IDOR) ──────────────────────────────────────
+  ghost-signal:
+    build:
+      context: ./web_exploitation/challenge-01-ghost-signal
+      dockerfile: Dockerfile
+    container_name: obv_ghost_signal
+    ports:
+      - "8001:8080"
+    restart: unless-stopped
+    labels:
+      - "obv.challenge=01"
+      - "obv.category=web"
+      - "obv.name=Ghost Signal"
+      - "obv.vulnerability=IDOR"
+
+  # ── Challenge 02: Dead Drop (SQL Injection) ────────────────────────────────
+  dead-drop:
+    build:
+      context: ./web_exploitation/challenge-02-dead-drop
+      dockerfile: Dockerfile
+    container_name: obv_dead_drop
+    ports:
+      - "8002:8080"
+    restart: unless-stopped
+    labels:
+      - "obv.challenge=02"
+      - "obv.category=web"
+      - "obv.name=Dead Drop"
+      - "obv.vulnerability=SQL Injection"
+
+  # ── Challenge 03: Cipher Nest (JWT Forgery) ────────────────────────────────
+  cipher-nest:
+    build:
+      context: ./web_exploitation/challenge-03-cipher-nest
+      dockerfile: Dockerfile
+    container_name: obv_cipher_nest
+    ports:
+      - "8003:8080"
+    restart: unless-stopped
+    labels:
+      - "obv.challenge=03"
+      - "obv.category=web"
+      - "obv.name=Cipher Nest"
+      - "obv.vulnerability=JWT Forgery (alg:none)"
+
+  # ── Challenge 04: Shadow Grid (SSTI) ──────────────────────────────────────
+  shadow-grid:
+    build:
+      context: ./web_exploitation/challenge-04-shadow-grid
+      dockerfile: Dockerfile
+    container_name: obv_shadow_grid
+    ports:
+      - "8004:8080"
+    restart: unless-stopped
+    labels:
+      - "obv.challenge=04"
+      - "obv.category=web"
+      - "obv.name=Shadow Grid"
+      - "obv.vulnerability=SSTI"
+
+  # ── Challenge 05: Blackout Protocol (SSRF) ────────────────────────────────
+  blackout-protocol:
+    build:
+      context: ./web_exploitation/challenge-05-blackout-protocol
+      dockerfile: Dockerfile
+    container_name: obv_blackout_protocol
+    ports:
+      - "8005:8080"
+    restart: unless-stopped
+    labels:
+      - "obv.challenge=05"
+      - "obv.category=web"
+      - "obv.name=Blackout Protocol"
+      - "obv.vulnerability=SSRF"
+
+  # ── Challenge 06: Vault Zero (Race Condition) ──────────────────────────────
+  vault-zero:
+    build:
+      context: ./web_exploitation/challenge-06-vault-zero
+      dockerfile: Dockerfile
+    container_name: obv_vault_zero
+    ports:
+      - "8006:8080"
+    restart: unless-stopped
+    labels:
+      - "obv.challenge=06"
+      - "obv.category=web"
+      - "obv.name=Vault Zero"
+      - "obv.vulnerability=Race Condition"
+
+networks:
+  default:
+    name: obv_ctf_network
